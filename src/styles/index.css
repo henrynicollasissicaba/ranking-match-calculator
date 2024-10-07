@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+    outline: none;
+    list-style: none;
+}
+
+.highlighted-word {
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1e2f04;
+    color: #fff;
+}
+
+main{
+    background-color: #f9ffe6;
+    padding: 2rem;
+    margin-inline: 1rem;
+    color: #1e2f04;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 2px solid #e3fc9a;
+}
+
+main h1{
+    text-align: center;
+    font-style: italic;
+}
+
+main h1 span{
+    display: block;
+    background-image: linear-gradient(90deg, #b6eb30, #97d111);
+}
+
+main .inputs{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputs input{
+    width: 280px;
+    padding: .5rem;
+    border: 1.5px solid #1e2f04;
+}
+
+main button{
+    display: block;
+    margin-inline: auto;
+    padding: .5rem 2rem;
+    width: 20rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #b6eb30;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+
+main button:hover{
+    background-color: #b6eb30;
+    color: #fff;
+}
+
+main .ranking-table{
+    display: grid;
+    place-items: center;
+    font-style: italic;
+    font-size: 1.125rem;
+}
+
+main .result{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.result span{
+    background-image: linear-gradient(90deg, #84bd0a, #3c5512);
+    font-weight: 700;
+}
+
+@media(max-width: 660px){
+    main .inputs{
+        justify-content: center;
+    }
+}

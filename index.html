@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Match Calculator</title>
+
+    <link rel="stylesheet" href="/src/styles/index.css">
+</head>
+<body>
+    
+    <main>
+        <h1>Desafio: <span class="highlighted-word">Calculadora de Partidas Rankeadas</span></h1>
+
+        <div class="inputs">
+            <input type="text" name="user-victory" id="user-victory" placeholder="Digite a quantidade de partidas ganhas" autocomplete="off">
+            <input type="text" name="user-lose" id="user-lose" placeholder="Digite a quantidade de partidas perdidas" autocomplete="off">
+        </div>
+
+        <div class="ranking-table">
+            <ul>
+                <li>Se vitórias for menor do que 10 = Ferro</li>
+                <li>Se vitórias for entre 11 e 20 = Bronze</li>
+                <li>Se vitórias for entre 21 e 50 = Prata</li>
+                <li>Se vitórias for entre 51 e 80 = Ouro</li>
+                <li>Se vitórias for entre 81 e 90 = Diamante</li>
+                <li>Se vitórias for entre 91 e 100 = Lendário</li>
+                <li>Se vitórias for maior ou igual a 101 = Imortal</li>
+            </ul>
+        </div>
+
+        <button id="calculate-ranking">Calcular</button>
+
+        <div class="result">
+            <p>O Herói tem o saldo de <span class="highlighted-word" id="victory-balance">{...}</span> vitórias e está no nível <span class="highlighted-word" id="hero-level">{...}</span>!</p>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
